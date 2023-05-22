@@ -144,37 +144,14 @@ footer {
 
 /*RESPONSIVE*/
 
-/*CELULAR*/
+/*pantallas muy pequeñas*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 575.98px) {
+  html,
   body {
-    width: 100%;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  .logo {
-    display: none;
-  }
-
-  .box-main,
-  .botones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.3125rem;
-  }
-
-  footer {
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 584px) {
-  body {
-    width: 100%;
+    overflow-x: hidden !important;
+    min-height: 100vh !important;
+    width: 100%vw !important;
   }
 
   .box-main,
@@ -189,32 +166,41 @@ footer {
   .textarea {
     text-align: center;
   }
+  .textarea {
+    border: none;
+    border-radius: none;
+  }
 }
 
-/*TABLET*/
-@media screen and (max-width: 768px) {
+/*pantallas pequeñas*/
+@media screen and (max-width: 767.98px) {
+  html,
   body {
-    width: auto;
+    min-height: 100vh !important;
+    width: 100%vw !important;
   }
-  h1,
-  .textarea,
-  .info {
-    text-align: center;
-  }
-  .logo {
-    display: none;
-  }
+
   .box-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.3125rem;
   }
-  .info {
-    width: 400px;
-  }
+}
 
-  footer {
-    width: 100%;
+/*Pantallas medianas*/
+@media (max-width: 991.98px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    min-height: 100vh !important;
+    width: 100%vw !important;
+  }
+  .logo {
+    display: none;
+  }
+  .textarea {
+    border: none;
+    border-radius: none;
   }
 }
