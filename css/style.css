@@ -163,7 +163,8 @@ footer {
   }
 
   .info,
-  .textarea {
+  .textarea,
+  .mensaje {
     text-align: center;
   }
   .textarea {
