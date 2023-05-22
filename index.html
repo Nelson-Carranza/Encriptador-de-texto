@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans:ital,wght@0,300;1,300&family=Lobster&family=Montserrat:wght@300&family=Roboto:wght@300&family=Yantramanav&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Encriptador</title>
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./img/Logo-og.png" alt="Logo alura color azul" />
+    <h1>Encriptador</h1>
+  </header>
+  <main class="box-main">
+    <section class="sect-principal">
+      <textarea class="textarea" cols="30" rows="10" placeholder="Ingrese el texto "></textarea>
+      <h6 class="info">Solo letras minúsculas y sin acentos</h6>
+      <div class="botones">
+        <button class="btn-main" onclick="btnEncriptar() ">Encriptar</button>
+        <button class="btn-main" onclick="btnDesencriptar()">
+          Desencriptar
+        </button>
+      </div>
+    </section>
+    <section class="sect-mensaje">
+      <textarea class="mensaje" id="texto-a-copiar"></textarea>
+      <div>
+        <button class="btn-main Copiar" onclick="copiar()">Copiar</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p class="Copyright">&copy Hecho por Nelson Carranza - 2023</p>
+  </footer>
+</body>
+<script src="./js/app.js"></script>
+
+</html>
